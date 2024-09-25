@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> registration page using script</title>
+    </head>
+    <body bg color="blue">
+        <form> 
+            <h1> registration page</h1>
+            first name:
+            <input type="text"id="first name" name="first name"/><br><br>
+            last name:
+            <input type="text"id="last name" name="last name"/><br><br>
+            password:
+            <input type="password"id="password"/><br><br>
+            gender:
+            <input type="radio"name="gender"/> male
+            <input type="radio"name="gender"/> female<br><br>
+            hobbies:
+            <input type="checkbox"/>reading
+            <input type="checkbox"/>playing
+            <input type="submit"value="submit"onclick="validate form()">
+            <input type="button"value="cancel"><br><br>
+        </form>
+        <script>
+            function validateform()
+            {
+                var firstname=document.getElementById("firstname").value;
+                var lastname=document.getElementById("lastname").value;
+                var password=document.getElementById("password").value;
+                if(firstname===""||lastname===""||password==="")
+            {
+                alert("please enter firstname and lastname and password");
+            }else{
+                alert("login successful")
+            }
+            }
+        </script>
+
+    </body>
+</html>
